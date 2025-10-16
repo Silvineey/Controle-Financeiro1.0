@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle financeiro</title>
+    <link rel="stylesheet" href="index.css">
+    <script  src="index.js" defer></script>
+</head>
+<body>
+    <h1>Controle financeiro</h1>
+    <main>
+        <div class="caixao">
+                <div>
+                    <label>Infome as entrada de dinheiros</label>
+                    <input type="number" id="entrada" placeholder="Entrada"><br>
+                    <button type="submit" onclick="somar()">Enviar</button>
+                </div>
+        </div>
+        <div class="caixao">
+            <div>
+                <label>Informe as saidas de dinheiro</label>
+                <input id="saida" type="number" placeholder="Saidas"><br>
+                <button type="submit" onclick="subtrair()">Enviar</button>
+            </div>
+        </div>
+
+        <div class="controles">
+                <div>
+                    <h3>Suas entradas são:</h3>
+                    <div id="entradas">
+                    </div>
+                </div>
+                <div>
+                    <h3>Seus gastos são:</h3>
+                    <div id="saidas">
+                    </div>
+                </div>
+        </div>
+        <div class="resultado">
+            <h1>Total de dinheiro</h1>
+            <p>0</p>
+        </div>
+        <div>
+            <button onclick="reset()">resetar</button>
+        </div>
+    </main>
+</body>
+</html>
